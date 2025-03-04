@@ -1,3 +1,3 @@
-import { HomePage } from '../pages/home/ui/HomePage';
+import { AuthPage } from '../pages/auth/ui/AuthPage';
 
-export default HomePage; 
+export default AuthPage; 

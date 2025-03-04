@@ -1,18 +1,18 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Button } from '../../../shared/ui/Button/Button';
-import { router } from 'expo-router';
 import { tokenService } from '../../../shared/lib/token/tokenService';
+import { router } from 'expo-router';
 
-export const HomePage: React.FC = () => {
+export const SettingsPage: React.FC = () => {
   const handleLogout = async () => {
     await tokenService.removeToken();
-    router.replace('/auth');
+    router.replace('/(auth)');
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Добро пожаловать!</Text>
+      <Text style={styles.title}>Настройки</Text>
       <Button title="Выйти" onPress={handleLogout} />
     </View>
   );
