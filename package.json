@@ -5,6 +5,7 @@
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
+    "generate-fsd": "node ./scripts/generate-fsd.js",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
